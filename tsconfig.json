@@ -13,10 +13,10 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": true, 
     "jsx": "react-jsx",
-    "types": ["vite/client"] // For import.meta.env typing
+    "types": ["vite/client"] 
   },
-  "include": ["src", "vite.config.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"], 
+  "references": [{ "path": "./tsconfig.node.json" }] 
 }
