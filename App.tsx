@@ -77,7 +77,7 @@ const App: React.FC = () => {
       setHexagramMeaning(response.text);
     } catch (e) {
       console.error("Error fetching hexagram meaning:", e);
-      setHexagramMeaningError("Error al generar el significado del hexagrama. Inténtalo de nuevo.");
+      setHexagramMeaningError("La clave API para el servicio de IA no está configurada. El significado del hexagrama no se puede generar." as (string | null));
     } finally {
       setIsHexagramMeaningLoading(false);
     }
