@@ -12,7 +12,7 @@ import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 
 // Ensure API_KEY is set in the environment. In a real deployment, this would be handled securely.
 // For this environment, we assume process.env.API_KEY is available.
-const API_KEY = process.env.API_KEY;
+const API_KEY: string | null = import.meta.env.VITE_API_KEY || null;
 
 const App: React.FC = () => {
   const [lowerTrigram, setLowerTrigram] = useState<Trigram | null>(null);
