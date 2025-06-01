@@ -37,7 +37,8 @@ const App: React.FC = () => {
       setAi(new GoogleGenAI({ apiKey: API_KEY }));
     } else {
       console.warn("API_KEY is not set. Gemini API features will be disabled.");
-      setHexagramMeaningError("La clave API para el servicio de IA no está configurada. El significado del hexagrama no se puede generar.");
+      setHexagramMeaningError("La clave API para el servicio de IA no está configurada. El significado del hexagrama no se puede generar." as (string | null));
+      
     }
   }, []);
 
